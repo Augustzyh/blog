@@ -1,0 +1,11 @@
+extends ./layout/layout
+
+block contents
+  h1(style="text-align:center;color:green;margin-top:100px;")= status
+  h1(style="text-align:center;margin-top:50px;") 即将跳转...
+
+block scripts
+  script.
+    setTimeout(() => {
+      location.href = "/"
+    }, 1000)
